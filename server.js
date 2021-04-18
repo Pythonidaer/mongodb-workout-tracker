@@ -16,6 +16,7 @@ const app = express();
 
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/tracker',
+    // process.env.MONGODB_URI || db,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
