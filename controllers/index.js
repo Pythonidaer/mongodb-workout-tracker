@@ -5,8 +5,10 @@ const router = require('express').Router();
 // const apiRoutes = require('./api');
 // imports our exercise-route
 const homeRoutes = require('./home-routes.js');
+const apiRoutes = require('./api');
 
 // directs route variable based on what comes from front end javascript or user
+router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
 // router.use('/api', apiRoutes);
 // request object contains info about the HTTP request
